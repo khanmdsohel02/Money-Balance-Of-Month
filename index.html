@@ -26,18 +26,18 @@
             <div class="bg-slate-100 rounded">
                 <div class=" flex flex-col items-center my-14 ml-32 ">
                     <h3 class="text-xl font-semibold ">Income</h3>
-                <p class="font-semibold my-3 mx-10">Income:   <input class="bg-[#dcdcdc] rounded box-border h-8 mr-12 " type="text"></p>
+                <p class="font-semibold my-3 mx-10">Income:   <input id="income-input" class="bg-[#dcdcdc] rounded box-border h-8 mr-12 " type="text"></p>
                 <h3 class="text-xl font-semibold">Expenses</h3>
-                <p class="font-semibold my-3 ">Food:   <input class="bg-[#dcdcdc] rounded box-border h-8 mr-8" type="text"></p>
-                <p class="font-semibold my-3 ">Rent:   <input class="bg-[#dcdcdc] rounded box-border h-8 mr-8" type="text"></p>
-                <p class="font-semibold my-3 ">Clothes:   <input class="bg-[#dcdcdc] rounded box-border h-8 mr-14" type="text"></p>
+                <p class="font-semibold my-3 ">Food:   <input id="food-input" class="bg-[#dcdcdc] rounded box-border h-8 mr-8" type="text"></p>
+                <p class="font-semibold my-3 ">Rent:   <input id="rent-input"  class="bg-[#dcdcdc] rounded box-border h-8 mr-8" type="text"></p>
+                <p class="font-semibold my-3 ">Clothes:   <input id="cloth-input"  class="bg-[#dcdcdc] rounded box-border h-8 mr-14" type="text"></p>
                 
-                <button class="bg-[#59A5FF] px-14 py-2 font-semibold text-white rounded text-xl mr-10">Calculate</button>
-                <h3 class="text-xl font-semibold">Total Expenses: <span>0</span></h3>
-                <h3 class="text-xl font-semibold">Balance: <span>0</span></h3>
-                <p class="font-semibold my-3 mr-10">Save: <input class="bg-[#dcdcdc] rounded box-border w-32 h-10" type="text"> % <button class="bg-[#59A5FF] px-12 py-2 font-semibold text-white rounded text-xl">Save</button></p>
-                <h3 class="text-xl font-semibold">Saving Amount: <span>0</span></h3>
-                <h3 class="text-xl font-semibold ">Remaining Balance: <span>0</span></h3>
+                <button id="calculate-btn"  class="bg-[#59A5FF] px-14 py-2 font-semibold text-white rounded text-xl mr-10">Calculate</button>
+                <h3 class="text-xl font-semibold">Total Expenses: <span id="total-expenses">0</span></h3>
+                <h3 class="text-xl font-semibold">Balance: <span id="total-balance">0</span></h3>
+                <p class="font-semibold my-3 mr-10">Save: <input id="save-input"  class="bg-[#dcdcdc] rounded box-border w-32 h-10" type="text"> % <button  id="save-btn"  class="bg-[#59A5FF] px-12 py-2 font-semibold text-white rounded text-xl">Save</button></p>
+                <h3 class="text-xl font-semibold">Saving Amount: <span id="save-amount">0</span></h3>
+                <h3 class="text-xl font-semibold ">Remaining Balance: <span id="remaining">0</span></h3>
                 </div>
                 </div>
             </div>
