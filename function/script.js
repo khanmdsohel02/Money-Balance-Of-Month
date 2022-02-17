@@ -1,3 +1,5 @@
+// calculating Part**************
+
 let foodCost = document.getElementById("food-input");
     
 let rentCost = document.getElementById("rent-input");
@@ -9,6 +11,8 @@ let totalCost = document.getElementById("total-expenses");
 let totalIncome = document.getElementById("income-input");
 
 let getBalance = document.getElementById("get-balance");
+
+// saving part**************
 
 let percentagIput = document.getElementById("save-input");
 
