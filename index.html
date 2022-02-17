@@ -10,9 +10,6 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Fontawesome -->
-
-    <script src="https://kit.fontawesome.com/bca7a89c88.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -26,16 +23,16 @@
             <div class="bg-slate-100 rounded-xl sm::w-auto">
                 <div class=" flex flex-col items-center my-5 lg:ml-32 py-4">
                     <h3 class="text-xl font-semibold pt-5">Income</h3>
-                <p class="font-semibold my-3 ">Income:   <input id="income-input" class="bg-[#dcdcdc] rounded box-border h-8 mr-12 " type="text"></p>
+                <p class="font-semibold my-3 ">Income:   <input id="income-input" class="bg-[#dcdcdc] rounded box-border h-8 mr-12 pl-2" type="text"></p>
                 <h3 class="text-xl font-semibold">Expenses</h3>
-                <p class="font-semibold my-3 ">Food:   <input id="food-input" class="bg-[#dcdcdc] rounded box-border h-8 mr-8" type="text"></p>
-                <p class="font-semibold my-3 ">Rent:   <input id="rent-input"  class="bg-[#dcdcdc] rounded box-border h-8 mr-8" type="text"></p>
-                <p class="font-semibold my-3 ">Clothes:   <input id="cloth-input"  class="bg-[#dcdcdc] rounded box-border h-8 mr-12" type="text"></p>
+                <p class="font-semibold my-3 ">Food:   <input id="food-input" class="bg-[#dcdcdc] rounded box-border h-8 mr-8 pl-2" type="text"></p>
+                <p class="font-semibold my-3 ">Rent:   <input id="rent-input"  class="bg-[#dcdcdc] rounded box-border h-8 mr-8 pl-2" type="text"></p>
+                <p class="font-semibold my-3 ">Clothes:   <input id="cloth-input"  class="bg-[#dcdcdc] rounded box-border h-8 mr-12 pl-2" type="text"></p>
                 
-                <button id="calculate-btn"  class="bg-[#59A5FF] px-14 py-2 font-semibold text-white rounded text-xl mr-10 my-4">Calculate</button>
+                <button id="calculate-btn" onclick="calculation()" class="bg-[#59A5FF] px-14 py-2 font-semibold text-white rounded text-xl mr-10 my-4">Calculate</button>
                 <h3 class="text-xl font-semibold mb-4">Total Expenses: <span id="total-expenses">0</span></h3>
-                <h3 class="text-xl font-semibold mb-4">Balance: <span id="total-balance">0</span></h3>
-                <p class="font-semibold my-3 mr-10 mb-4">Save: <input id="save-input"  class="bg-[#dcdcdc] rounded box-border w-32 h-10 pl-12" type="text"> % <button  id="save-btn"  class="bg-[#59A5FF] px-12 py-2 font-semibold text-white rounded text-xl">Save</button></p>
+                <h3 class="text-xl font-semibold mb-4">Balance: <span id="get-balance">0</span></h3>
+                <p class="font-semibold my-3 mr-10 mb-4">Save: <input id="save-input"  class="bg-[#dcdcdc] rounded box-border w-32 h-10 pl-12" type="text"> % <button id="save-btn" onclick="saveButton()" class="bg-[#59A5FF] px-12 py-2 font-semibold text-white rounded text-xl">Save</button></p>
                 <h3 class="text-xl font-semibold my-4 mr-9">Saving Amount: <span id="save-amount">0</span></h3>
                 <h3 class="text-xl font-semibold mr-9">Remaining Balance: <span id="remaining">0</span></h3>
                 </div>
@@ -43,6 +40,6 @@
             </div>
        </section>
     </main>
-    <script src="Functionality/script.js"></script>
+    <script src="function/script.js"></script>
 </body>
 </html>
