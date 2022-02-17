@@ -23,13 +23,9 @@ let remainBalance = document.getElementById("remaining")
 
 function calculation(){
     
-    let totalExpenses = parseFloat(foodCost.value) + parseFloat(rentCost.value) + parseFloat(clothCost.value);
+    totalCost.innerText = parseFloat(foodCost.value) + parseFloat(rentCost.value) + parseFloat(clothCost.value);
     
-    totalCost.innerText = totalExpenses;
-
-   let balanced = parseFloat(totalIncome.value) - parseFloat(totalExpenses);
-   
-   getBalance.innerText = balanced;
+    getBalance.innerText =(parseFloat(totalIncome.value) - parseFloat(totalCost.innerText));
    
 }
 
